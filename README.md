@@ -33,16 +33,3 @@ Controller → Service → Repository (strict layered architecture)
    mvn spring-boot:run
 
 4. API runs on http://localhost:8080
-
-## API Endpoints
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| POST | /api/auth/register | Register new user | No |
-| POST | /api/auth/login | Login + get JWT | No |
-| POST | /api/auth/refresh | Refresh access token | No |
-| GET | /api/projects | Get all projects | Yes |
-| POST | /api/projects | Create project | Admin |
-| PUT | /api/projects/{id} | Update project | Admin |
-| DELETE | /api/projects/{id} | Delete project | Admin |
-| GET | /api/tasks | Get all tasks | Yes |
-| POST | /api/tasks | Create task | Yes |
